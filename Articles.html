@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+
+
+  
   </head>
   <body>
     
@@ -175,9 +179,52 @@
 
       </div>
     </section>
-<br>
-<hr><span>auhsiudhudhei</span></hr>
-</br>
+
+
+<div class="container">
+    <div class="container-box rotated">
+        <button type="button" aria-placeholder="right" class="btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal">Create Article</button>
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button"  data-dismiss="modal" class="close">&times;</button>
+                    <h4 class="modal-title">
+                        Create your Article
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form" method="post" id="reused_form" >
+                        <p> </p>
+                        <div class="form-group">
+                            <label for="name"> Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="email"> Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="name"> Message:</label>
+                            <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="name"> Image Upload:</label>
+                            <input type="file" class="form-control" id="image" name="image" required>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Post It! &rarr;</button>
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <br></br>
          </div>
          <div class="row match-height">
