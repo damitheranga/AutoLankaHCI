@@ -26,11 +26,12 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
   <body>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Car<span>Book</span></a>
+	      <a class="navbar-brand" href="index.html">Vehicle<span>Book</span></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -41,7 +42,7 @@
 	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
 	          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-	          <li class="nav-item active"><a href="car.html" class="nav-link">Cars</a></li>
+	          <li class="nav-item active"><a href="car.html" class="nav-link">Vehicle</a></li>
 	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
@@ -62,7 +63,121 @@
       </div>
     </section>
 		
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col" style="margin-left: 6.2%">
 
+             <div style="height: 23%"><p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1 ">sell Vehicles</a></p>
+            </div>
+            <div style="height: 23%"><p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1 ">sell Vehicles Parts</a></p>
+            </div>
+             <div style="height: 23%"><p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1 ">Buy Vehicle</a></p>
+            </div>
+           <div style="height: 23%"><p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1 ">Buy car</a> </p>
+            </div>
+             
+             <div style="height: 23%"><p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1 ">Buy SUV/Jeep</a></p>
+            </div>
+
+          </div>
+          <div class="col-6">
+            
+                <img class="nature" src="images/bg_1.jpg" style="margin:auto; width: 100%; display: none;">
+                <img class="nature" src="images/bg_2.jpg" style="margin:auto; width: 100%; display: none;">
+                <img class="nature" src="images/bg_3.jpg" style="margin:auto; width: 100%; display: none;">
+
+           
+          </div>
+          <div class="col" style="margin-left: 6.2%">
+           <div style="height: 23%; margin-right: 5%"><p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1 "> Buy Motorcycle</a></p>
+            </div>
+            <div style="height: 23%; margin-right: 5%"><p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1 "> Buy Vans</a></p>
+            </div>
+             <div style="height: 23%; margin-right: 5% "><p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1 ">Buy Trucks</a></p>
+            </div>
+           <div style="height: 23%; margin-right: 5%"><p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1 ">Buy Buses</a></p>
+            </div>
+             
+             <div style="height: 23%; margin-right: 5%"><p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1 ">Buy Spare parts</a> </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+ <section>
+    <div class="container">
+        <div class="row">
+          
+          <table style="width:100%; border: 1px solid black; padding: 5px; border-spacing: 50px; text-align: center; border-radius: 5px;">
+            
+                <tr>
+                    <th><form action="/action_page.php">
+                          <select name="cars" id="cars">
+                            <option value="Make">Make</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                          </select>
+                         <!--<br><br>
+                          <input type="submit" value="Submit">-->
+                        </form>
+                    </th>
+                    <th></th> 
+                    
+                  </tr>
+                  <tr>
+                    <td><!--<form action="/action_page.php">-->
+                        <input type="select" name="cars">
+                        <select>
+                            <option value="Make">Fule Type</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                          </td>
+                    <td ><p>Mileage</p><input type="text" name="from" placeholder="from" style="width: 60px; margin-left: -150px"></td>
+                    <td><p>&nbsp</p><input type="text" name="to" placeholder="to" style="width: 60px; margin-left: -310px"></td>
+                  
+                  </tr>
+                  <tr>
+                    <td>
+                        <input type="text" name="keyword" placeholder="keyword">
+                    </td>
+                    <td><input type="text" name="Condition" placeholder="Condition"></td>
+                    
+                  </tr>
+                  <tr>
+                    <td><input type="text" name="Bodytype" placeholder="Body Type"></td>
+                    <td><input type="text" name="Exterior colour" placeholder="Exterior colour"></td>
+                    
+                  </tr>
+                  <tr>
+                    <td><input type="text" name="Transmission" placeholder="Transmission"></td>
+                    <td><input type="text" name="Door Count" placeholder="Door Count"></td>
+                    
+                  </tr>
+                  <tr>
+                    <td><input type="text" name="Exterior colour" placeholder="Exterior colour"></td>
+                   <td ><p style="margin-top: 20px">Engin Size (cc) </p><input type="text" name="from" placeholder="from" style="width: 60px; margin-left: -150px"></td>
+                    <td><p style="margin-top: 20px">&nbsp</p><input type="text" name="to" placeholder="to" style="width: 60px; margin-left: -310px"></td
+                    
+                  </tr>
+                  <tr>
+                    <td><input type="text" name="Fule Type" placeholder="Fule Type"></td>
+                    <td ><p style="margin-top: 20px">Price</p><input type="text" name="from" placeholder="from" style="width: 60px; margin-left: -150px"></td>
+                    <td><p style="margin-top: 20px">&nbsp</p><input type="text" name="to" placeholder="to" style="width: 60px; margin-left: -310px"></td>
+                  </tr>
+                </div>
+            </table>
+                    </div>
+                        </div>
+
+                           
+  </section>     
+         
 		<section class="ftco-section bg-light">
     	<div class="container">
     		<div class="row">
@@ -342,6 +457,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script>w3.slideshow(".nature", 2500);</script>
     
   </body>
 </html>
