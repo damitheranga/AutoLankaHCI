@@ -25,7 +25,7 @@
                 <div class="signin-content">
                     <div class="signin-image">
                         <figure><img src="images/imglogin.jpg" alt="sing up image"></figure>
-                        <h5 href="#" class="signup-image-link">Create an account</h5>
+                        <h5 href="../regform//register.html" class="signup-image-link">Create an account</h5>
                     </div>
 
                     <div class="signin-form">
@@ -45,12 +45,16 @@
                             </div>
                             <div class="form-group form-button">
                                 <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Sign-UP"/>
+        
                             </div>
+
+                            
                         </form>
                         <div class="social-login">
                             <span class="social-label">Or login with</span>
                             <ul class="socials">
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                                <li><a href="../regform//register.html"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
                                 <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
                                 <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
 
@@ -69,5 +73,11 @@
     <!-- JS -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+        document.getElementById("signup").onclick = function () {
+            location.href = "www.google.com";
+        };
+    </script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
