@@ -637,6 +637,12 @@ input:focus {
     left: auto;
     right: 3%; }
 
+    .hero-wrap.hero-wrap-2 .overlay {
+      width: 100%;
+      opacity: .3;
+      height: 425px;
+  }
+
 .pagination .page-item .page-link {
   background-color: #e1e1e1;
   min-width: 44px;
