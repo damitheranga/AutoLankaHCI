@@ -134,10 +134,10 @@
               <!-- Start  contact -->
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="form contact-form">
-                  <h2 style="font-weight: bold">Contact US </h2>
-                  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <h4 style="font-weight: bold">Contact US </h4>
+                  <form action="forms/contact.php" name="registration" method="post" role="form" class="php-email-form" data-toggle="validator" role="form">
                     <div class="form-group">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required/>
                       <div class="validate"></div>
                     </div>
                     <div class="form-group">
@@ -149,10 +149,10 @@
                     <div class="form-group">
                 
                       <div>
-                        <select class="form-control" name="service" placeholder="What do you need">
+                        <select class="form-control" name="service" placeholder="What do you need" required>
                           <option  value="" disabled selected hidden>Please choose</option>
                           <option>Vehicle Details</option>
-                          <option>Vehicle Parts Details</option>
+                          <option>Vehicle Parts </option>
                           <option>Buy and Sell cars </option>
                         </select>
                         <div class="dropDownSelect2"></div>
@@ -164,7 +164,7 @@
 
 
                     <div class="form-group">
-                      <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                      <textarea class="form-control" name="message" rows="5" data-rule="required"  data-msg="Please write something for us" placeholder="Message" required></textarea>
                       <div class="validate"></div>
                     </div>
 
@@ -300,6 +300,7 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="js/form_validation.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
