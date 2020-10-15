@@ -43,6 +43,8 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/stylenew.css">
+    <link rel="stylesheet" href="css/slideradd.css">
+
 
     <style>
       * {
@@ -57,15 +59,158 @@
   padding:20px;
 }
 
-
+/*1st slider*/
 .css-slideshow {
 margin-left:500dp;
 position: relative;
-max-width: 410px;
-height: 730px;
+max-width: 400px;
+height: 500px;
 margin: auto;
 }
 
+#slideshow { 
+    margin: 0 auto; 
+    position: relative; 
+    width: 90%;
+    padding: 1% 1% 56.25% 1%; /*56.25 is for 16x9 resolution*/
+
+		background: rgba(0,0,0,0.2);
+  
+
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 5px; 
+    bottom: 10px; 
+}
+
+#slideshow > div > img {
+	width:100%;
+	height:100%;
+
+}
+
+#slideshow:hover i, #slideshow:hover .slider-dots{
+	opacity: 1;
+	}
+
+.slidebtn {
+	z-index:99;
+	background:transparent;
+	outline:none;
+	border:none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	
+	}
+
+.slidebtn:active,
+.slidedtn:focus {
+	outline:none;}
+	
+.slidebtn i {
+	color:#FFF;
+	font-size:72px;
+	opacity: 0.2;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+
+	}
+/*end of slide 1*/
+.css-slideshow2 {
+margin-left:500dp;
+position: relative;
+max-width: 400px;
+height: 500px;
+margin: auto;
+}
+
+#slideshow2 { 
+    margin: 0 auto; 
+    position: relative; 
+    width: 90%;
+    padding: 1% 1% 56.25% 1%; /*56.25 is for 16x9 resolution*/
+
+		background: rgba(0,0,0,0.2);
+  
+
+}
+
+#slideshow2 > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 5px; 
+    bottom: 10px; 
+}
+
+#slideshow2 > div > img {
+	width:100%;
+	height:100%;
+
+}
+
+#slideshow2:hover i, #slideshow2:hover .slider-dots{
+	opacity: 1;
+	}
+
+
+.prev {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    bottom: 10px;
+}
+
+.next {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    bottom: 10px;
+}
+
+
+.slider-dots {
+	opacity: 0.2;
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+  position:absolute;
+  left:50%;
+  bottom:3%;
+  transform: translate(-50%, 0);
+  z-index:99;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+
+}
+
+.slider-dots li {
+  color: #000;
+  display: inline;
+  font-size: 48px;
+  margin-right: 5px;
+  cursor:pointer;
+}
+
+.slider-dots li.active-dot {
+  color: #fff;
+}
+
+/*
+JQUERY SLIDER BY JohnRostislavovich - https://codepen.io/JohnRostislavovich
+ALL YOU HAVE TO DO:
+-copy the whole code html, css & js
+-include jquery lib
+-change the images
+*/
 
 
 
@@ -254,7 +399,7 @@ margin: auto;
                                 <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                               </ul>
                             </div>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                     
                           </div>						
                         </div>
                       </div>
@@ -275,7 +420,7 @@ margin: auto;
                                 <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                               </ul>
                             </div>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+               
                           </div>						
                         </div>
                       </div>		
@@ -296,7 +441,7 @@ margin: auto;
                                 <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
                               </ul>
                             </div>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+
                           </div>						
                         </div>
                       </div>								
@@ -317,7 +462,7 @@ margin: auto;
                                 <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                               </ul>
                             </div>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                 
                           </div>						
                         </div>
                       </div>
@@ -342,7 +487,7 @@ margin: auto;
                                 <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                               </ul>
                             </div>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+
                           </div>						
                         </div>
                       </div>
@@ -363,7 +508,7 @@ margin: auto;
                                 <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
                               </ul>
                             </div>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                    
                           </div>						
                         </div>
                       </div>
@@ -384,7 +529,7 @@ margin: auto;
                                 <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                               </ul>
                             </div>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+     
                           </div>						
                         </div>
                       </div>
@@ -405,7 +550,7 @@ margin: auto;
                                 <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                               </ul>
                             </div>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+
                           </div>						
                         </div>
                       </div>						
@@ -430,7 +575,7 @@ margin: auto;
                                 <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                               </ul>
                             </div>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+               
                           </div>						
                         </div>
                       </div>
@@ -451,7 +596,7 @@ margin: auto;
                                 <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                               </ul>
                             </div>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                          
                           </div>						
                         </div>
                       </div>
@@ -472,7 +617,7 @@ margin: auto;
                                 <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                               </ul>
                             </div>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        
                           </div>						
                         </div>
                       </div>	
@@ -493,7 +638,7 @@ margin: auto;
                                 <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                               </ul>
                             </div>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                           
                           </div>						
                         </div>
                       </div>
@@ -512,12 +657,12 @@ margin: auto;
             </div>
 
 
-
+            <h4><b>&nbsp;&nbsp;&nbsp;&nbsp;Add Vehicle Parts</b></h4>
 
             <form name="myform" id="myform" class="needs-validation"  novalidate>
               <div class="row">
                 <div class="col">
-           
+                
 
                   <h5><b>Photos</b></h5>
                   <hr style="height:2px;border-width:0;color:gray;background-color:gray">
@@ -998,44 +1143,58 @@ function showDivs(n) {
           </div><!-- end of form-->
 
           <form>
-            <div class="row">
+            <div class="form-row">
               <div class="col">
-                <div class="w3-content" style="max-width:1200px">
-                  <img class="mySlides" src="images/background3.jpg" style="width:100%;display:none">
-                  <img class="mySlides" src="images/background3.jpg" style="width:100%">
-                  <img class="mySlides" src="images/background3.jpg" style="width:100%;display:none">
-                
-                  <div class="w3-row-padding w3-section">
-                    <div class="w3-col s4">
-                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/background3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
-                    </div>
-                    <div class="w3-col s4">
-                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/background3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
-                    </div>
-                    <div class="w3-col s4">
-                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/background3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
-                    </div>
+                <div id="slideshow">
+                  <div class="slideitem current">
+                    <img src="img/add/truckparts.jpg">
                   </div>
-                </div>
+                  <div class="slideitem">
+                    <img src="img/add/bbbbb.jpg">
+                  </div>
+                  <div class="slideitem">
+                    <img src="img/add/ggggg.jpg">
+                  </div>
+                  <div class="slideitem">
+                    <img src="img/add/sparenew.jpg">
+                  </div>
+                  <div class="slideitem">
+                    <img src="img/add/sparev.jpg">
+                  </div>
+                  <div class="slideitem">
+                    <img src="img/add/vvvvv.jpg">
+                  </div>
+                  <div class="slideitem">
+                    <img src="img/add/spare12.jpg">
+                  </div>
+               </div>
+
               </div>
               <div class="col">
-                <div class="w3-content" style="max-width:1200px">
-                  <img class="mySlides" src="images/background3.jpg" style="width:100%;display:none">
-                  <img class="mySlides" src="images/background3.jpg" style="width:100%">
-                  <img class="mySlides" src="images/background3.jpg" style="width:100%;display:none">
-                
-                  <div class="w3-row-padding w3-section">
-                    <div class="w3-col s4">
-                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/background3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
-                    </div>
-                    <div class="w3-col s4">
-                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/background3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
-                    </div>
-                    <div class="w3-col s4">
-                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/background3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
-                    </div>
+                <div id="slideshow2">
+                  <div class="slideitem current">
+                    <img src="img/add/truckparts.jpg">
                   </div>
-                </div>
+                  <div class="slideitem">
+                    <img src="img/add/bbbbb.jpg">
+                  </div>
+                  <div class="slideitem">
+                    <img src="img/add/ggggg.jpg">
+                  </div>
+                  <div class="slideitem">
+                    <img src="img/add/sparenew.jpg">
+                  </div>
+                  <div class="slideitem">
+                    <img src="img/add/sparev.jpg">
+                  </div>
+                  <div class="slideitem">
+                    <img src="img/add/vvvvv.jpg">
+                  </div>
+                  <div class="slideitem">
+                    <img src="img/add/spare12.jpg">
+                  </div>
+               </div>
+
               </div>
             </div>
           </form>
@@ -1068,27 +1227,7 @@ function showDivs(n) {
 
 
 
-<div class="slideshow-container">
 
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="img_nature_wide.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
-  </div>
-  
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="img_snow_wide.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
-  </div>
-  
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="img_mountains_wide.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
-  </div>
-  
-  </div>
   <br>
   
   <div style="text-align:center">
@@ -1170,6 +1309,212 @@ function showDivs(n) {
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+
+  <script>
+
+$(document).ready(function(){
+
+$("#slideshow > div:gt(0)").hide();
+
+var buttons = "<button class=\"slidebtn prev\"><i class=\"fa fa-chevron-circle-left\"></i></button><button class=\"slidebtn next\"><i class=\"fa fa-chevron-circle-right\"></i></button\>";
+
+var slidesl = $('.slideitem').length
+var d = "<li class=\"dot active-dot\">&bull;</li>";
+for (var i = 1; i < slidesl; i++) {
+  d = d+"<li class=\"dot\">&bull;</li>";
+}	
+var dots = "<ul class=\"slider-dots\">" + d + "</ul\>";
+
+$("#slideshow").append(dots).append(buttons);
+var interval = setInterval(slide, 3000);
+
+function intslide(func) {
+	if (func == 'start') { 
+ 	interval = setInterval(slide, 3000);
+	} else {
+		clearInterval(interval);		
+		}
+}
+
+function slide() {
+		sact('next', 0, 1200);
+}
+	
+function sact(a, ix, it) {
+        var currentSlide = $('.current');
+        var nextSlide = currentSlide.next('.slideitem');
+        var prevSlide = currentSlide.prev('.slideitem');
+		    var reqSlide = $('.slideitem').eq(ix);
+
+		    var currentDot = $('.active-dot');
+    	  var nextDot = currentDot.next();
+    	  var prevDot = currentDot.prev();
+		    var reqDot = $('.dot').eq(ix);
+		
+        if (nextSlide.length == 0) {
+      		nextDot = $('.dot').first();
+            nextSlide = $('.slideitem').first();
+            }
+
+        if (prevSlide.length == 0) {
+      		prevDot = $('.dot').last();
+            prevSlide = $('.slideitem').last();
+            }
+			
+		if (a == 'next') {
+			var Slide = nextSlide;
+			var Dot = nextDot;
+			}
+			else if (a == 'prev') {
+				var Slide = prevSlide;
+				var Dot = prevDot;
+				}
+				else {
+					var Slide = reqSlide;
+					var Dot = reqDot;
+					}
+
+        currentSlide.fadeOut(it).removeClass('current');
+        Slide.fadeIn(it).addClass('current');
+		
+    	currentDot.removeClass('active-dot');
+    	Dot.addClass('active-dot');
+}	
+
+$('.next').on('click', function(){
+		intslide('stop');						
+		sact('next', 0, 400);
+		intslide('start');						
+	});//next
+
+$('.prev').on('click', function(){
+		intslide('stop');						
+		sact('prev', 0, 400);
+		intslide('start');						
+	});//prev
+
+$('.dot').on('click', function(){
+		intslide('stop');
+		var index  = $(this).index();
+		sact('dot', index, 400);
+		intslide('start');						
+	});//prev
+//slideshow
+});
+
+/*
+JQUERY SLIDER BY JohnRostislavovich - https://codepen.io/JohnRostislavovich
+ALL YOU HAVE TO DO:
+-copy the whole code html, css & js
+-include jquery lib
+-change the images
+*/
+
+
+/* second slider*/
+
+
+
+$(document).ready(function(){
+
+$("#slideshow2 > div:gt(0)").hide();
+
+var buttons = "<button class=\"slidebtn prev\"><i class=\"fa fa-chevron-circle-left\"></i></button><button class=\"slidebtn next\"><i class=\"fa fa-chevron-circle-right\"></i></button\>";
+
+var slidesl = $('.slideitem').length
+var d = "<li class=\"dot active-dot\">&bull;</li>";
+for (var i = 1; i < slidesl; i++) {
+  d = d+"<li class=\"dot\">&bull;</li>";
+}	
+var dots = "<ul class=\"slider-dots\">" + d + "</ul\>";
+
+$("#slideshow2").append(dots).append(buttons);
+var interval = setInterval(slide, 3000);
+
+function intslide(func) {
+	if (func == 'start') { 
+ 	interval = setInterval(slide, 3000);
+	} else {
+		clearInterval(interval);		
+		}
+}
+
+function slide() {
+		sact('next', 0, 1200);
+}
+	
+function sact(a, ix, it) {
+        var currentSlide = $('.current');
+        var nextSlide = currentSlide.next('.slideitem');
+        var prevSlide = currentSlide.prev('.slideitem');
+		    var reqSlide = $('.slideitem').eq(ix);
+
+		    var currentDot = $('.active-dot');
+    	  var nextDot = currentDot.next();
+    	  var prevDot = currentDot.prev();
+		    var reqDot = $('.dot').eq(ix);
+		
+        if (nextSlide.length == 0) {
+      		nextDot = $('.dot').first();
+            nextSlide = $('.slideitem').first();
+            }
+
+        if (prevSlide.length == 0) {
+      		prevDot = $('.dot').last();
+            prevSlide = $('.slideitem').last();
+            }
+			
+		if (a == 'next') {
+			var Slide = nextSlide;
+			var Dot = nextDot;
+			}
+			else if (a == 'prev') {
+				var Slide = prevSlide;
+				var Dot = prevDot;
+				}
+				else {
+					var Slide = reqSlide;
+					var Dot = reqDot;
+					}
+
+        currentSlide.fadeOut(it).removeClass('current');
+        Slide.fadeIn(it).addClass('current');
+		
+    	currentDot.removeClass('active-dot');
+    	Dot.addClass('active-dot');
+}	
+
+$('.next').on('click', function(){
+		intslide('stop');						
+		sact('next', 0, 400);
+		intslide('start');						
+	});//next
+
+$('.prev').on('click', function(){
+		intslide('stop');						
+		sact('prev', 0, 400);
+		intslide('start');						
+	});//prev
+
+$('.dot').on('click', function(){
+		intslide('stop');
+		var index  = $(this).index();
+		sact('dot', index, 400);
+		intslide('start');						
+	});//prev
+//slideshow
+});
+
+/*
+JQUERY SLIDER BY JohnRostislavovich - https://codepen.io/JohnRostislavovich
+ALL YOU HAVE TO DO:
+-copy the whole code html, css & js
+-include jquery lib
+-change the images
+*/
+
+
+  </script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
