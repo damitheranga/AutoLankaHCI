@@ -260,7 +260,8 @@ body {
   overflow: hidden; }
 
 .signup-image {
-  margin: 0 55px; }
+  margin: 0 55px;
+border-color: 5px; }
 
 .form-title {
   margin-bottom: 33px; }
