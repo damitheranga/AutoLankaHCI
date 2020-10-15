@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
     
@@ -47,26 +48,132 @@
       * {
         box-sizing: border-box;
       }
-      
-      .h6 {
-      margin-bottom: 0px!important;
+
+
+      .needs-validation
+{
+  border:thin #A8A8A8 solid;
+  margin:20px;
+  padding:20px;
+}
+
+
+.css-slideshow {
+margin-left:500dp;
+position: relative;
+max-width: 410px;
+height: 730px;
+margin: auto;
+}
+
+
+
+
+
+
+      .not-human {
+  width: 340px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid $rgb-204;
+  padding: 15px;
+  position: relative;
+  top: -55px;
+  left: 3px;
+  
+  .captcha-code {
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid $rgb-204;
+    font-size: 18px;
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid rgb(74, 144, 226);
+    }
+  }
+  
+  img {
+    display: inline-block;
+    position: relative;
+    left: 75px;
+    top: -80px;
+    width: 300px;
+    height: 57px;
+  }
+  
+  .line {
+    width: 370px;
+    height: 1px;
+    background-color: $rgb-204;
+    margin-top: 90px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .img {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: -36px;
+    margin: 0 4px 75px 4px;
+    display: inline-block;
+    cursor: pointer;
+    
+    background-size: 24px 24px;
+    opacity: 0.55;
+    
+    &.replay {
+      background: url(https://www.gstatic.com/recaptcha/api2/refresh.png);
+    }
+    &.audio {
+      background: url(https://www.gstatic.com/recaptcha/api2/audio.png);
+    }
+    &.info {
+      background: url(https://www.gstatic.com/recaptcha/api2/info.png)
+    }
+    
+    &:hover {
+      opacity: 1.0;
+    }
+  }
+  
+  .verify {
+    float: right;
+    position: relative;
+    top: -42px;
+    margin-right: 5px;
+    background-color: rgb(74, 144, 226);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}
+
+#btn1{
+        background-color:#00c851;
+        width: 150px;
+        
       }
 
-      /* Create two equal columns that floats next to each other */
-      .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-        height: 300px; /* Should be removed. Only for demonstration */
+      #btn2{
+        background-color:#ffa500;
+        width: 150px;
+        
       }
       
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
+    
  
       </style>
 
@@ -351,7 +458,7 @@
                       <div class="col-sm-3">
                         <div class="thumb-wrapper">
                           <div class="img-box">
-                            <img src="img/add/img1spare.jpg" class="img-fluid" alt="">
+                            <img src="img/add/im.jpg" class="img-fluid" alt="">
                           </div>
                           <div class="thumb-content">
                             <h4>Google Pixel</h4>
@@ -407,29 +514,12 @@
 
 
 
-            <form name="myform" id="myform" class="needs-validation" novalidate>
+            <form name="myform" id="myform" class="needs-validation"  novalidate>
               <div class="row">
                 <div class="col">
-                  <h6>Common</h6>
-                  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+           
 
-                  
-                  <div class="form-group row">
-                    <label for="inputmodel" class="col-sm-3 col-form-label">Model</label>
-                    <div class="col-sm-9">
-         
-                        <select class="custom-select"  placeholder="Transmission" required>
-                      <option  value="" disabled selected hidden>Please choose</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
-
-                  <h6>Photos</h6>
+                  <h5><b>Photos</b></h5>
                   <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
                   
@@ -446,74 +536,88 @@
 
 
 
-                  <h6>General</h6>
+                  <h5><b>Common</b></h5>
                   <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-
+                  
                   
                   <div class="form-group row">
-                    <label for="inputbodytype" class="col-sm-3 col-form-label">Body Type</label>
+                    <label for="inputbodytype" class="col-sm-3 col-form-label">Categories</label>
                     <div class="col-sm-9">
-                      <select class="custom-select"  placeholder="Transmission" required>
-                        <option  value="" disabled selected hidden>Please choose</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
+
+                      <div class="custom-control custom-radio">
                      
-                    </div>
-                  </div>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
-
-
-                  <div class="form-group row">
-                    <label for="inputmodel" class="col-sm-3 col-form-label">Model No</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" id="inputEngineCC" placeholder="" required >
-                     
-                    </div>
-                  </div>
-                  <div class="valid-feedback">
-                    Looks good!
-                    
-                  </div>
-
-
-                  
-                  <div class="form-group row">
-                    <label for="inputmodel" class="col-sm-3 col-form-label">Release Year</label>
-                    <div class="col-sm-9">
-
-                      <input type="number" class="form-control" id="inputRealseyear" placeholder="" required >
+                      </div>
                    
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios" required>
+                        <label class="custom-control-label" for="defaultGroupExample1">4WD Accessories</label>
+                      </div>
                       
+                      <!-- Group of default radios - option 2 -->
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios"required>
+                        <label class="custom-control-label" for="defaultGroupExample2">Books, Manuals & DVDs</label>
+                      </div>
+                      
+                      <!-- Group of default radios - option 3 -->
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultGroupExample3" name="groupOfDefaultRadios"required>
+                        <label class="custom-control-label" for="defaultGroupExample3">Collector Cars Parts</label>
+                      </div>
 
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultGroupExample4" name="groupOfDefaultRadios" required">
+                        <label class="custom-control-label" for="defaultGroupExample1">Engine & Engine Parts</label>
+                      </div>
                       
+                      <!-- Group of default radios - option 2 -->
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultGroupExample5" name="groupOfDefaultRadios" required>
+                        <label class="custom-control-label" for="defaultGroupExample2">Lights & Electrical</label>
+                      </div>
+                      
+                      <!-- Group of default radios - option 3 -->
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultGroupExample6" name="groupOfDefaultRadios" required>
+                        <label class="custom-control-label" for="defaultGroupExample3">Performance Parts</label>
+                      </div>
+
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultGroupExample7" name="groupOfDefaultRadios" required>
+                        <label class="custom-control-label" for="defaultGroupExample1">Tools</label>
+                      </div>
+                      
+                      <!-- Group of default radios - option 2 -->
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultGroupExample8" name="groupOfDefaultRadios">
+                        <label class="custom-control-label" for="defaultGroupExample2">Tyres and Wheels</label>
+                      </div>
+                      
+                      <!-- Group of default radios - option 3 -->
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultGroupExample9" name="groupOfDefaultRadios">
+                        <label class="custom-control-label" for="defaultGroupExample3">Other</label>
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+
+     
+
        
-                     
-                    </div>
-                  </div>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
+         
 
 
-                  <div class="form-group row">
-                    <label for="inputtransmission" class="col-sm-3 col-form-label">Transmission</label>
-                    <div class="col-sm-9">
-                      <select class="custom-select"  placeholder="Transmission" required>
-                     <option  value="" disabled selected hidden>Please choose</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                     
-                    </div>
-                  </div>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
+               
+
+
+                  
+                
+
+            
 
 
                   
@@ -521,154 +625,15 @@
 
 
                   
-                  <div class="form-group row">
-                    <label for="inputcondition" class="col-sm-3 col-form-label">Condition</label>
-                    <div class="col-sm-9">
-                      <select class="custom-select"  placeholder="Transmission" required>
-                        <option  value="" disabled selected hidden>Please choose</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                     
-                    </div>
-                  </div>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
+                
 
-              
+           
+         
 
 
-                  <div class="form-group row">
-                    <label for="inputcondition" class="col-sm-3 col-form-label">Millage</label>
-                    <div class="col-sm-9">
-                      <input type="number" class="form-control" id="inputMillage" placeholder="" required >
-                     
-                    </div>
-                  </div>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
 
-                  <div class="form-group row">
-                    <label for="inputcondition" class="col-sm-3 col-form-label">Fuel Type</label>
-                <div class="col-sm-9">
+            
 
-                  <div class="container">
-                      <div class="custom-control custom-checkbox custom-control-inline">
-                        <input type="checkbox" class="custom-control-input" id="defaultInline1"required>
-                        <label class="custom-control-label" for="defaultInline1">Petrol&nbsp;</label>
-                      </div>
-                      
-                      <!-- Default inline 2-->
-                      <div class="custom-control custom-checkbox custom-control-inline">
-                        <input type="checkbox" class="custom-control-input" id="defaultInline2" required>
-                        <label class="custom-control-label" for="defaultInline2">Diesel</label>
-                      </div>
-                      
-                      <!-- Default inline 3-->
-                      <div class="custom-control custom-checkbox custom-control-inline">
-                        <input type="checkbox" class="custom-control-input" id="defaultInline3" required>
-                        <label class="custom-control-label" for="defaultInline3">Electric</label>
-                      </div>
-
-                    </div>
-
-
-                    <div class="container">
-
-                      <div class="custom-control custom-checkbox custom-control-inline">
-                        <input type="checkbox" class="custom-control-input" id="defaultInline1" required>
-                        <label class="custom-control-label" for="defaultInline1">Hybrid</label>
-                      </div>
-                      
-                      <!-- Default inline 2-->
-                      <div class="custom-control custom-checkbox custom-control-inline">
-                        <input type="checkbox" class="custom-control-input" id="defaultInline2" required >
-                        <label class="custom-control-label" for="defaultInline2">Gas&nbsp;&nbsp;&nbsp;</label>
-                      </div>
-                      
-                      <!-- Default inline 3-->
-                      <div class="custom-control custom-checkbox custom-control-inline">
-                        <input type="checkbox" class="custom-control-input" id="defaultInline3" required>
-                        <label class="custom-control-label" for="defaultInline3">Other</label>
-                      </div>
-
-                    </div>
-                     
-                </div>
-                  </div>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
-
-
-                  <div class="form-group row">
-                    <label for="inputmodel" class="col-sm-3 col-form-label">Reg No</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" id="inputEngineCC" placeholder="Registration Number" required >
-                     
-                    </div>
-                  </div>
-                  <div class="valid-feedback">
-                    Looks good!
-                    
-                  </div>
-
-
-                  <div class="form-group row">
-                    <label for="inputmodel" class="col-sm-3 col-form-label">Price</label>
-                    <div class="col-sm-9">
-                      <input type="number" class="form-control" id="inputEngineCC" placeholder="Price" required >
-                     
-                    </div>
-                  </div>
-                  <div class="valid-feedback">
-                    Looks good!
-                    
-                  </div>
-
-
-                  <div class="form-group row">
-                    <label for="inputcondition" class="col-sm-3 col-form-label">District</label>
-                    <div class="col-sm-9">
-                      <select class="custom-select"  placeholder="District" required>
-                        <option  value="" disabled selected hidden>Please choose</option>
-        
-                              <option value="ampara">Ampara</option>
-                              <option value="anuradhapura">Anuradhapura</option>
-                              <option value="badulla">Badulla</option>
-                              <option value="batticaloa">Batticaloa</option>
-                              <option value="colombo">Colombo</option>
-                              <option value="galle">Galle</option>
-                              <option value="gampaha">Gampaha</option>
-                              <option value="hambantota">Hambantota</option>
-                              <option value="jaffna">Jaffna</option>
-                              <option value="kalutara">Kalutara</option>
-                              <option value="kandy">Kandy</option>
-                              <option value="kegalle">Kegalle</option>
-                              <option value="kilinochchi">Kilinochchi</option>
-                              <option value="kurunegala">Kurunegala</option>
-                              <option value="mannar">Mannar</option>
-                              <option value="matale">Matale</option>
-                              <option value="matara">Matara</option>
-                              <option value="moneragala">Moneragala</option>
-                              <option value="mullativu">Mullativu</option>
-                              <option value="nuwara-eliya">Nuwara Eliya</option>
-                              <option value="polonnaruwa">Polonnaruwa</option>
-                              <option value="puttalam">Puttalam</option>
-                              <option value="ratnapura">Ratnapura</option>
-                              <option value="trincomalee">Trincomalee</option>
-                              <option value="vavuniya">Vavuniya</option>
-
-                      </select>
-                     
-                    </div>
-                  </div>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
 
 
                   
@@ -685,23 +650,15 @@
 
 
                 <div class="col">
-                <h6>Exterior</h6>
+                <h5><b>General</b></h5>
 
                   <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
                   
                   <div class="form-group row">
-                    <label for="inputdoorcount" class="col-sm-3 col-form-label">Door Count</label>
+                    <label for="exteriorcolorinput" class="col-sm-3 col-form-label">Titile</label>
                     <div class="col-sm-9">
-                      <select class="custom-select"  placeholder="Transmission" required>
-                        <option  value="" disabled selected hidden>Please choose</option>
-                        <option value="1">2</option>
-                        <option value="2">4</option>
-                        <option value="3">5</option>
-                        <option value="3">6</option>
-                        <option value="3">7</option>
-                        <option value="3">Other</option>
-                      </select>
+                      <input type="text" class="form-control" id="inputtitile" placeholder="" required >
                     </div>
                   </div>
                   <div class="valid-feedback">
@@ -709,14 +666,9 @@
                   </div>
 
                   <div class="form-group row">
-                    <label for="exteriorcolorinput" class="col-sm-3 col-form-label">Exterior Color</label>
+                    <label for="exteriorcolorinput" class="col-sm-3 col-form-label">Part No</label>
                     <div class="col-sm-9">
-                      <select class="custom-select"  placeholder="Transmission" required>
-                        <option  value="" disabled selected hidden>Please choose</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
+                      <input type="text" class="form-control" id="inputpartNo" placeholder="" required >
                     </div>
                   </div>
                   <div class="valid-feedback">
@@ -724,83 +676,103 @@
                   </div>
 
                   <div class="form-group row">
-                    <label for="exteriorcolorinput" class="col-sm-3 col-form-label">Engine CC</label>
+                    <label for="exteriorcolorinput" class="col-sm-3 col-form-label">Price</label>
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="inputEngineCC" placeholder="10000cc" required >
+                      <input type="number" class="form-control" id="inputEngineCC" placeholder="" required >
                     </div>
                   </div>
                   <div class="valid-feedback">
                     Looks good!
                   </div>
 
-                  <h6>Additional</h6>
+                  <h5><b>Description</b></h5>
                   <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
                   
                   <div class="form-group row">
-                    
+ 
                     <div class="col-sm-12">
-                      <label for="inputmodel" class="col-sm-6 col-form-label">Opttion and Features</label>
-                      
-  
-                      </div>
-
-                      <div class="container">
-                        <div class="custom-control custom-checkbox custom-control-inline">
-                          <input type="checkbox" class="custom-control-input" id="defaultInline1"required>
-                          <label class="custom-control-label" for="defaultInline1">Petrol&nbsp;</label>
-                        </div>
-                        
-                        <!-- Default inline 2-->
-                        <div class="custom-control custom-checkbox custom-control-inline">
-                          <input type="checkbox" class="custom-control-input" id="defaultInline2" required>
-                          <label class="custom-control-label" for="defaultInline2">Diesel</label>
-                        </div>
-                        
-                        <!-- Default inline 3-->
-                        <div class="custom-control custom-checkbox custom-control-inline">
-                          <input type="checkbox" class="custom-control-input" id="defaultInline3" required>
-                          <label class="custom-control-label" for="defaultInline3">Electric</label>
-                        </div>
-  
-                      </div>
-
-                      <div class="container">
-                        <div class="custom-control custom-checkbox custom-control-inline">
-                          <input type="checkbox" class="custom-control-input" id="defaultInline1"required>
-                          <label class="custom-control-label" for="defaultInline1">Petrol&nbsp;</label>
-                        </div>
-                        
-                        <!-- Default inline 2-->
-                        <div class="custom-control custom-checkbox custom-control-inline">
-                          <input type="checkbox" class="custom-control-input" id="defaultInline2" required>
-                          <label class="custom-control-label" for="defaultInline2">Diesel</label>
-                        </div>
-                        
-                        <!-- Default inline 3-->
-                        <div class="custom-control custom-checkbox custom-control-inline">
-                          <input type="checkbox" class="custom-control-input" id="defaultInline3" required>
-                          <label class="custom-control-label" for="defaultInline3">Electric</label>
-                        </div>
-  
-                      </div>
-                       
-                  </div>
+                 
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            
                      
                     </div>
                   </div>
                   <div class="valid-feedback">
                     Looks good!
                   </div>
+
+                  <br>
+           
+                  <h6>Safety</h6>
+                  <hr style="height:2.5px;border-width:0;color:gray;background-color:gray">
+
                   
-                <button class="btn btn-primary" type="submit">Submit form</button>
-                </div>
+                 
+                  <label for="check">
+                    <div class="input-container">
+                      <input type="checkbox" class="checkbox" id="check" required>
+                      <span class="checkbox-text">I'm not a robot</span>
+                    </div>
+                  </label>
+                  
+                  <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png">
+                  <span class="recaptcha">reCAPTCHA</span>
+                  <br>
+               
+                  
+                  <div class="triangle"></div>
+                  
+                  <div class="not-human">
+                    <input type="text" class="captcha-code" placeholder="Type the text">
+                    
+                    <div class="line"></div>
+                    
+                    <img src="https://i.imgur.com/YvGc2Tt.png">
+                    
+                    <div class="controls">
+                      <div class="img replay"></div>
+                      <div class="img audio"></div>
+                      <div class="img info"></div>
+                      
+                      <input type="button" class="verify" value="Verify">
+                    </div>
+                  </div>
+   
+   
 
 
+      
+              
+        
+                 
                 
-                </div>
+           
 
+          
+        
+           
                 
+                  
+
+            
+                </div>
+                   
+
+               
+
+               
+           
+
+                  
+
+
+         
+          
+
+                  
+         
+
 
 
                 
@@ -812,7 +784,45 @@
                 
               </div>
 
+                  
+              <div class="buttonfield">                          
+<hr>
+
+<div class="form-group row">
+            
+  <div class="col-sm-12">
+   
+    <div class="text-center"> 
+      <button id="btn1" class="btn mr-5" type="submit">Submit</button>
+    
+      <button id="btn2" class="btn ml-5" type="submit">Cancel</button>
+  </div> 
+
+  
+  
+
+
+
+     
+   
+
+
+
+</div>
+
+
+
             </form>
+
+        
+
+
+          <br>
+          <br>
+
+       
+
+    
                   <!-- Start  contact -->
     
           
@@ -863,8 +873,92 @@
 });
 
 
+$(document).ready(function() {
+  $('.not-human, .triangle').hide();
+  $('.verify').addClass('disabled');
+  
+  function human(e) {
+    if ($('.checkbox-text').hasClass('robot')) {
+      return;
+    }
+    else {
+    	$('.checkbox-text').text("You're human!").css("color", "green").addClass('human');
+    	$('.checkbox').addClass('disabled');
+    	$('.checkbox').click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    	});
+    }
+    
+    $('.not-human, .triangle').slideUp();
+  }
+  
+  function robot(event) {
+    if ($('.checkbox-text').hasClass('human')) {
+      return;
+    }
+    else {
+      $('.checkbox-text').text("ROBOT").css("color", "red").addClass('robot');
+      $('.checkbox').addClass('disabled');
+      $('.checkbox').click(function(event) {
+        event.preventDefault();
+      });
+    
+      $('.not-human, .triangle').slideDown();
+    }
+  }
+  
+  $('.checkbox').click(function() {
+    if ($('.checkbox').is(":checked")) {
+      $(document).mousemove(function() {
+        window.setTimeout(function() {
+          human();
+        }, 250);
+      });
+      
+      window.setTimeout(function() {
+        robot();
+      }, 1000);
+    };
+  });
+  
+  $('.captcha-code').keyup(function(event) {
+    if ($('.captcha-code').val().length <= 0) {
+      $('.verify').addClass('disabled');
+    }
+    else {
+      $('.verify').removeClass('disabled');
+    };
+  });
+  
+  $('.verify').click(function() {
+    if ($('.captcha-code').val() == "captcha code") {
+      $('.checkbox-text').removeClass('robot').addClass('human');
+      $('.not-human, .triangle').slideUp();
+    }
+  });
+});
 
 
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
 
 
                   </script>
@@ -899,9 +993,61 @@
 
               <!-- End Left contact -->
             </div>
+
+       
+          </div><!-- end of form-->
+
+          <form>
+            <div class="row">
+              <div class="col">
+                <div class="w3-content" style="max-width:1200px">
+                  <img class="mySlides" src="images/background3.jpg" style="width:100%;display:none">
+                  <img class="mySlides" src="images/background3.jpg" style="width:100%">
+                  <img class="mySlides" src="images/background3.jpg" style="width:100%;display:none">
+                
+                  <div class="w3-row-padding w3-section">
+                    <div class="w3-col s4">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/background3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/background3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/background3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="w3-content" style="max-width:1200px">
+                  <img class="mySlides" src="images/background3.jpg" style="width:100%;display:none">
+                  <img class="mySlides" src="images/background3.jpg" style="width:100%">
+                  <img class="mySlides" src="images/background3.jpg" style="width:100%;display:none">
+                
+                  <div class="w3-row-padding w3-section">
+                    <div class="w3-col s4">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/background3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/background3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="images/background3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+     
+      
+      
+      
+      
+            
           </div>
         </div>
-
 
       </div><!-- End Contact Section -->
 
@@ -910,10 +1056,47 @@
 
 
     </div>
+    <form>
+ 
 
 
   </section><!-- End Blog Section -->
 
+
+
+
+
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img_nature_wide.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img_snow_wide.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img_mountains_wide.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
 </main>
 
 
