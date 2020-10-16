@@ -33,18 +33,18 @@
                         <form method="POST" class="register-form" id="login-form">
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="your_name" id="your_name" placeholder="Your Name" required/>
+                                <input type="text" name="userid" id="your_name" placeholder="Your Name" required/>
                             </div>
                             <div class="form-group">
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="your_pass" id="your_pass" placeholder="Password" required/>
+                                <input type="password" name="pswrd" id="your_pass" placeholder="Password" required/>
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
                                 <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
                             </div>
                             <div class="form-group form-button">
-                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" onclick="check(this.form)"/>
 
                           
                              
@@ -88,5 +88,19 @@
             location.href = "www.google.com";
         };
     </script>
+
+
+
+<script language="javascript">
+    function check(form) { /*function to check userid & password*/
+        /*the following code checkes whether the entered userid and password are matching*/
+        if(form.userid.value == "damith" && form.pswrd.value == "damith") {
+            window.open('../index.html')/*opens the target page while Id & password matches*/
+        }
+        else {
+            alert("Error Password or Username")/*displays error message*/
+        }
+    }
+</script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
