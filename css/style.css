@@ -4,6 +4,98 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+ @font-face {
+  font-family: OpenSans-Regular;
+  src: url('../fontslogin/OpenSans/OpenSans-Regular.ttf'); 
+
+}
+
+
+
+
+
+/* Wrapper */
+.icon-button {
+	background-color: white;
+	border-radius: 3.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2.0rem;
+	height: 3.6rem;
+	line-height: 3.6rem;
+  margin: 0px 0px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3.6rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 3.6rem;
+	height: 3.6rem;
+	border-radius: 3.6rem;
+	margin: -1.8rem;
+}
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.google-plus span {
+	background-color: #db5a3c;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 3.6rem;
+	left: 0;
+	line-height: 3.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 3.6rem;
+	z-index: 10;
+}
+.icon-button .icon-twitter {
+	color: #4099ff;
+}
+.icon-button .icon-facebook {
+	color: #3B5998;
+}
+.icon-button .icon-google-plus {
+	color: #db5a3c;
+}
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus {
+	color: white;
+}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -242,6 +334,12 @@ input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0; }
 
+  input[type="color"] {
+  color:#;
+  }
+
+
+
 input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
@@ -275,17 +373,6 @@ progress {
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto; }
-
-  input[type=text] {
-    width: 130px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-  }
-  
-  /* When the input field gets focus, change its width to 100% */
-  input[type=text]:focus {
-    width: 100%;
-  }
 
 [type="search"] {
   outline-offset: -2px;
@@ -334,17 +421,6 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem; }
-
-.cblock {
-  display: block;
-  width: 100%;
-  border: none;
-  background-color: #000000;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-}
 
 .lead {
   font-size: 1.25rem;
@@ -906,7 +982,6 @@ pre {
     flex: 0 0 25%;
     max-width: 25%; }
   .col-md-4 {
-    margin: auto;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33.33333%;
     flex: 0 0 33.33333%;
@@ -1611,6 +1686,15 @@ pre {
   .table-responsive > .table-bordered {
     border: 0; }
 
+
+
+
+    label {
+      
+      color:#000;
+     
+    }
+
 .form-control {
   display: block;
   width: 100%;
@@ -1724,7 +1808,6 @@ textarea.form-control {
   height: auto; }
 
 .form-group {
- margin-left: 10px;
   margin-bottom: 1rem; }
 
 .form-text {
@@ -1780,33 +1863,6 @@ textarea.form-control {
   margin-top: 0.25rem;
   font-size: 80%;
   color: #28a745; }
-
-/* Tooltip container */
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
- 
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
 
 .valid-tooltip {
   position: absolute;
@@ -5526,12 +5582,6 @@ button.bg-dark:focus {
 .border-white {
   border-color: #fff !important; }
 
-.square {
-  height: 50px;
-  width: 50px;
-  background-color: #555;
-}
-
 .rounded-sm {
   border-radius: 0.2rem !important; }
 
@@ -8218,18 +8268,6 @@ h1, h2, h3, h4, h5,
   color: rgba(0, 0, 0, 0.8);
   font-weight: 400; }
 
-  option { 
-    /* Whatever color  you want */
-    background-color: #a0a7adf1;
-}
-#nname {
-    padding: 5px;
-    color: #000;
-    font-size: 12px;
-    background: transparent;
-    -webkit-appearance: none;
-
-}
 .text-primary {
   color: #1089ff !important; }
 
@@ -8441,6 +8479,8 @@ h1, h2, h3, h4, h5,
       opacity: .3;
       height: 600px; }
     .hero-wrap.hero-wrap-2 .slider-text {
+
+      
       height: 600px !important; }
 
 .slider-text {
@@ -8507,10 +8547,9 @@ h1, h2, h3, h4, h5,
     line-height: .8; }
 
 .featured-top {
-  margin-top: 5px; }
+  margin-top: -250px; }
 
 .request-form {
-  margin: auto;
   background: #fff;
   padding: 30px;
   z-index: 1;
@@ -8907,50 +8946,7 @@ h1, h2, h3, h4, h5,
           width: 62%; }
         .pills .rating-wrap .star span:last-child {
           width: 32%; }
-/* Style the form - display items horizontally */
-.form-inline {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-}
 
-/* Add some margins for each label */
-.form-inline label {
-  margin: 5px 10px 5px 0;
-}
-
-/* Style the input fields */
-.form-inline input {
-  vertical-align: middle;
-  margin: 5px 10px 5px 0;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-}
-
-/* Style the submit button */
-.form-inline button {
-  padding: 10px 20px;
-  background-color: dodgerblue;
-  border: 1px solid #ddd;
-  color: white;
-}
-
-.form-inline button:hover {
-  background-color: royalblue;
-}
-
-/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
-@media (max-width: 800px) {
-  .form-inline input {
-    margin: 10px 0;
-  }
-
-  .form-inline {
-    flex-direction: column;
-    align-items: stretch;
-  }
-}
 .car-list {
   overflow-x: scroll; }
 
@@ -9247,9 +9243,9 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
-  padding: 0em 0 2em 0;
+  padding: 6em 0;
   position: relative; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 867.98px) {
     .ftco-section {
       padding: 6em 0; } }
 
@@ -9989,6 +9985,69 @@ textarea.form-control {
   transition: opacity .2s ease-out, visibility 0s linear .2s;
   z-index: 1000; }
 
+
+
+
+    .slidernew {
+      width:100%;
+      height: 300px;
+      background-repeat:no-repeat;
+
+
+background-position: 50% 50%;
+background-size: cover;
+
+    }
+  
+
+  .container-contact100-form-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+  
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  .contact100-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid #e6e6e6;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    border-color: #fff;
+   
+    border-radius: 10px;
+    background: #668cff;
+  
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    font-weight: bold;
+   
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  .contact100-form-btn:hover {
+    background: #404b46;
+  }
+
 #ftco-loader.fullscreen {
   padding: 0;
   left: 0;
@@ -10059,41 +10118,3 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #5e5e5e;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
