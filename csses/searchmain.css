@@ -825,8 +825,9 @@ legend {
 
 .s009 form {
   width: 100%;
-  max-width: 790px;
+  max-width: 860px;
   margin: 0;
+  height: initial;
 }
 
 .s009 form .inner-form {
@@ -983,6 +984,7 @@ legend {
 
 .s009 form .inner-form .advance-search .row.third .input-field {
   width: 100%;
+  margin-top: 20%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
