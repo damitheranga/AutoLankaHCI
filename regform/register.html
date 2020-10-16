@@ -46,7 +46,7 @@
                                 <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in Terms of service </label>
                             </div>
                             <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"  onclick="check(this.form)"/>
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-terms" class="agree-term" />
@@ -122,5 +122,16 @@
             $("#txtConfirmPassword").keyup(isPasswordMatch);
             });
     </script>
+
+
+<script language="javascript">
+    function check(form) { /*function to check userid & password*/
+        /*the following code checkes whether the entered userid and password are matching*/
+
+            window.open('../login/index.html')/*opens the target page while Id & password matches*/
+        
+  
+    }
+</script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
