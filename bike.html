@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,600,700" rel="stylesheet" />
+    <link href="csses/searchmain.css" rel="stylesheet" />
   </head>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <body>
@@ -51,7 +53,7 @@
 	  </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/image_2.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bk4.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
@@ -84,8 +86,8 @@
           <div class="col-6">
             
                 <img class="nature"  src="images/bk.jpg" style="margin:auto; width: 100%; display: none; border-radius: 12px;">
-                <img class="nature" src="images/bk1.jpg" style="margin:auto; width: 100%; display: none; border-radius: 12px;">
-                <img class="nature" src="images/image_2.jpg" style="margin:auto; width: 100%; display: none; border-radius: 12px;">
+                <img class="nature" src="images/bk2.jpg" style="margin:auto; width: 100%; display: none; border-radius: 12px;">
+                <img class="nature" src="images/bk4.jpg" style="margin:auto; width: 100%; display: none; border-radius: 12px;">
 
            
           </div>
@@ -106,76 +108,115 @@
     </section>
 
  <section>
-    <div class="container">
-        <div class="row">
-          
-          <table style="width:100%; border: 1px solid black; padding: 5px; border-spacing: 50px; text-align: center; border-radius: 5px;">
-            
-                <tr>
-                    <th><form action="/action_page.php">
-                          <select name="cars" id="cars">
-                            <option value="Make">Make</option>
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="opel">Opel</option>
-                            <option value="audi">Audi</option>
-                          </select>
-                         <!--<br><br>
-                          <input type="submit" value="Submit">-->
-                        </form>
-                    </th>
-                    <th></th> 
-                    
-                  </tr>
-                  <tr>
-                    <td><!--<form action="/action_page.php">-->
-                        <input type="select" name="cars">
-                        <select>
-                            <option value="Make">Fule Type</option>
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="opel">Opel</option>
-                            <option value="audi">Audi</option>
-                        </select>
-                          </td>
-                    <td ><p>Mileage</p><input type="text" name="from" placeholder="from" style="width: 60px; margin-left: -150px"></td>
-                    <td><p>&nbsp</p><input type="text" name="to" placeholder="to" style="width: 60px; margin-left: -310px"></td>
-                  
-                  </tr>
-                  <tr>
-                    <td>
-                        <input type="text" name="keyword" placeholder="keyword">
-                    </td>
-                    <td><input type="text" name="Condition" placeholder="Condition"></td>
-                    
-                  </tr>
-                  <tr>
-                    <td><input type="text" name="Bodytype" placeholder="Body Type"></td>
-                    <td><input type="text" name="Exterior colour" placeholder="Exterior colour"></td>
-                    
-                  </tr>
-                  <tr>
-                    <td><input type="text" name="Transmission" placeholder="Transmission"></td>
-                    <td><input type="text" name="Door Count" placeholder="Door Count"></td>
-                    
-                  </tr>
-                  <tr>
-                    <td><input type="text" name="Exterior colour" placeholder="Exterior colour"></td>
-                   <td ><p style="margin-top: 20px">Engin Size (cc) </p><input type="text" name="from" placeholder="from" style="width: 60px; margin-left: -150px"></td>
-                    <td><p style="margin-top: 20px">&nbsp</p><input type="text" name="to" placeholder="to" style="width: 60px; margin-left: -310px"></td
-                    
-                  </tr>
-                  <tr>
-                    <td><input type="text" name="Fule Type" placeholder="Fule Type"></td>
-                    <td ><p style="margin-top: 20px">Price</p><input type="text" name="from" placeholder="from" style="width: 60px; margin-left: -150px"></td>
-                    <td><p style="margin-top: 20px">&nbsp</p><input type="text" name="to" placeholder="to" style="width: 60px; margin-left: -310px"></td>
-                  </tr>
-                </div>
-            </table>
-                    </div>
-                        </div>
+  <div class="s009">
+    <form>
+      <div class="inner-form">
+        <div class="basic-search">
+          <div class="input-field">
+            <input id="search" type="text" placeholder="Type Keywords" />
+            <div class="icon-wrap">
+              <svg class="svg-inline--fa fa-search fa-w-16" fill="#ccc" aria-hidden="true" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="advance-search">
+          <span class="desc">ADVANCED SEARCH</span>
+          <div class="row">
+            <div class="input-field">
+              <div class="input-select">
+                <select data-trigger="" name="choices-single-defaul">
+                  <option placeholder="" value="">Make</option>
+                  <option>Honda</option>
+                  <option>Yamaha</option>
+                  <option>Suzuki</option>
+                  <option>Bajaj</option>
+                  <option>Ducati</option>
+                  <option>Kawasaki</option>
+                  <option>Aprilia</option>
+                  <option>BMW</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-field">
+              <div class="input-select">
+                <select data-trigger="" name="choices-single-defaul">
+                  <option placeholder="" value="">Transmission</option>
+                  <<option>Manual</option>
+                  <option>Automatic</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-field">
+              <div class="input-select">
+                <select data-trigger="" name="choices-single-defaul">
+                  <option placeholder="" value="">Condition</option>
+                  <option>New</option>
+                  <option>Used</option>
+                  <option>Recondition</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row second">
+            <div class="input-field">
+              <div class="input-select">
+                <select data-trigger="" name="choices-single-defaul">
+                  <option placeholder="" value="">Exterior colour</option>
+                  <option>White </option>
+                  <option>Black</option>
+                  <option>Blue</option>
+                  <option>Gold</option>
+                  <option>Green</option>
+                  <option>Grey</option>
+                  <option>Pink</option>
+                  <option>Orange</option>
+                  <option>Purple</option>
+                </select>
 
-                           
+                <label for="year" style="margin-left: 15px;">Release Year</label>
+					  <!-- <input type="text" placeholder="dulita" id="year" style="width: 50px; padding: 10px 185px 24px 70px;;"> -->
+					  <form action="/action_page.php">
+						<input type="date" id="year" name="year" style="margin-top: -20px; margin-left: 10px; padding: 0px 1px 19px 0px;" >
+						
+					  </form>
+              </div>
+            </div>
+            
+            <div class="input-field">
+              <div class="input-select">
+                <select data-trigger="" name="choices-single-defaul">
+                  <option placeholder="" value="">Capacity(cc)</option>
+                  <option>50 - 300 (cc)</option>
+                  <option>300-1000(cc) </option>
+                </select>  
+              </div>
+            </div>
+            <div class="input-field">
+              <div class="input-select">
+                <select data-trigger="" name="choices-single-defaul">
+                  <option placeholder="" value="">Type</option>
+                  <option>Regular</option>
+                  <option>Sport </option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row third">
+            <div class="input-field">
+              <div class="result-count">
+                <span> </span></div>
+              <div class="group-btn">
+                <button class="btn-delete" id="delete">RESET</button>
+                <button class="btn-search">SEARCH</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>       
   </section>     
          
 		<section class="ftco-section bg-light">
@@ -183,175 +224,134 @@
     		<div class="row">
     			<div class="col-md-4">
     				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/car-1.jpg);">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/bk.jpg);">
     					</div>
     					<div class="text">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
+    						<h2 class="mb-0"><a href="car-single.html">Hunk-08</a></h2>
     						<div class="d-flex mb-3">
-	    						<span class="cat">Cheverolet</span>
-	    						<p class="price ml-auto">$500 <span>/day</span></p>
+	    						<span class="cat">Yamaha</span>
+	    						<p class="price ml-auto"> </p>
     						</div>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    						<p class="d-flex mb-0 d-block"><a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
     					</div>
     				</div>
     			</div>
     			<div class="col-md-4">
     				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/car-2.jpg);">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/bk1.jpg);">
     					</div>
     					<div class="text">
-    						<h2 class="mb-0"><a href="car-single.html">Range Rover</a></h2>
+    						<h2 class="mb-0"><a href="car-single.html">CBR-x8</a></h2>
     						<div class="d-flex mb-3">
-	    						<span class="cat">Subaru</span>
-	    						<p class="price ml-auto">$500 <span>/day</span></p>
+	    						<span class="cat">Honda</span>
+	    						<p class="price ml-auto"></p>
     						</div>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    						<p class="d-flex mb-0 d-block"> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
     					</div>
     				</div>
     			</div>
     			<div class="col-md-4">
     				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/car-3.jpg);">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/bk2.jpg);">
     					</div>
     					<div class="text">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
+    						<h2 class="mb-0"><a href="car-single.html">CBR-PR</a></h2>
     						<div class="d-flex mb-3">
-	    						<span class="cat">Cheverolet</span>
-	    						<p class="price ml-auto">$500 <span>/day</span></p>
+	    						<span class="cat">Honda</span>
+	    						<p class="price ml-auto"></p>
     						</div>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    						<p class="d-flex mb-0 d-block"><a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
     					</div>
     				</div>
     			</div>
 
     			<div class="col-md-4">
     				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/car-4.jpg);">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/bk3.jpg);">
     					</div>
     					<div class="text">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
+    						<h2 class="mb-0"><a href="car-single.html">Mercedes K9</a></h2>
     						<div class="d-flex mb-3">
-	    						<span class="cat">Cheverolet</span>
-	    						<p class="price ml-auto">$500 <span>/day</span></p>
+	    						<span class="cat">Mercedes</span>
+	    						<p class="price ml-auto"></p>
     						</div>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    						<p class="d-flex mb-0 d-block"><a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
     					</div>
     				</div>
     			</div>
     			<div class="col-md-4">
     				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/car-5.jpg);">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/bk5.jpg);">
     					</div>
     					<div class="text">
-    						<h2 class="mb-0"><a href="car-single.html">Range Rover</a></h2>
+    						<h2 class="mb-0"><a href="car-single.html">Rz</a></h2>
     						<div class="d-flex mb-3">
-	    						<span class="cat">Subaru</span>
-	    						<p class="price ml-auto">$500 <span>/day</span></p>
+	    						<span class="cat">Yamaha</span>
+	    						<p class="price ml-auto"></p>
     						</div>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    						<p class="d-flex mb-0 d-block"> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
     					</div>
     				</div>
     			</div>
     			<div class="col-md-4">
     				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/car-6.jpg);">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/bk6.jpg);">
     					</div>
     					<div class="text">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
+    						<h2 class="mb-0"><a href="car-single.html">Beast-5</a></h2>
     						<div class="d-flex mb-3">
-	    						<span class="cat">Cheverolet</span>
-	    						<p class="price ml-auto">$500 <span>/day</span></p>
+	    						<span class="cat">Yamaha</span>
+	    						<p class="price ml-auto"></p>
     						</div>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    						<p class="d-flex mb-0 d-block"><a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
     					</div>
     				</div>
     			</div>
 
     			<div class="col-md-4">
     				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/car-7.jpg);">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/bk7.jpg);">
     					</div>
     					<div class="text">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
+    						<h2 class="mb-0"><a href="car-single.html">Discovery-135</a></h2>
     						<div class="d-flex mb-3">
-	    						<span class="cat">Cheverolet</span>
-	    						<p class="price ml-auto">$500 <span>/day</span></p>
+	    						<span class="cat">Bajaj</span>
+	    						<p class="price ml-auto"></p>
     						</div>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    						<p class="d-flex mb-0 d-block"><a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
     					</div>
     				</div>
     			</div>
     			<div class="col-md-4">
     				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/car-8.jpg);">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/bk8.jpg);">
     					</div>
     					<div class="text">
-    						<h2 class="mb-0"><a href="car-single.html">Range Rover</a></h2>
+    						<h2 class="mb-0"><a href="car-single.html">Pulser</a></h2>
     						<div class="d-flex mb-3">
-	    						<span class="cat">Subaru</span>
-	    						<p class="price ml-auto">$500 <span>/day</span></p>
+	    						<span class="cat">Bajaj</span>
+	    						<p class="price ml-auto"></p>
     						</div>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    						<p class="d-flex mb-0 d-block"><a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
     					</div>
     				</div>
     			</div>
     			<div class="col-md-4">
     				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/car-9.jpg);">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/bk9.jpg);">
     					</div>
     					<div class="text">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
+    						<h2 class="mb-0"><a href="car-single.html">Scooty-ZR</a></h2>
     						<div class="d-flex mb-3">
-	    						<span class="cat">Cheverolet</span>
-	    						<p class="price ml-auto">$500 <span>/day</span></p>
+	    						<span class="cat">Yamaha</span>
+	    						<p class="price ml-auto"></p>
     						</div>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    						<p class="d-flex mb-0 d-block"> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
     					</div>
     				</div>
     			</div>
 
-    			<div class="col-md-4">
-    				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/car-10.jpg);">
-    					</div>
-    					<div class="text">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-    						<div class="d-flex mb-3">
-	    						<span class="cat">Cheverolet</span>
-	    						<p class="price ml-auto">$500 <span>/day</span></p>
-    						</div>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/car-11.jpg);">
-    					</div>
-    					<div class="text">
-    						<h2 class="mb-0"><a href="car-single.html">Range Rover</a></h2>
-    						<div class="d-flex mb-3">
-	    						<span class="cat">Subaru</span>
-	    						<p class="price ml-auto">$500 <span>/day</span></p>
-    						</div>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="car-wrap rounded ftco-animate">
-    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/car-12.jpg);">
-    					</div>
-    					<div class="text">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-    						<div class="d-flex mb-3">
-	    						<span class="cat">Cheverolet</span>
-	    						<p class="price ml-auto">$500 <span>/day</span></p>
-    						</div>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
+    			
     		</div>
     		<div class="row mt-5">
           <div class="col text-center">
@@ -456,6 +456,34 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
   <script>w3.slideshow(".nature", 2500);</script>
+  <script type="text/javascript">
+    $(function () {
+      $('#datetimepicker9').datetimepicker({
+        viewMode: 'years'
+      });
+    });
+   </script> -->
+   <script src="js/extention/choices.js"></script>
+   <script>
+     const customSelects = document.querySelectorAll("select");
+     const deleteBtn = document.getElementById('delete')
+     const choices = new Choices('select',
+     {
+     searchEnabled: false,
+     itemSelectText: '',
+     removeItemButton: true,
+     });
+     deleteBtn.addEventListener("click", function(e)
+     {
+     e.preventDefault()
+     const deleteAll = document.querySelectorAll('.choices__button')
+     for (let i = 0; i < deleteAll.length; i++)
+     {
+       deleteAll[i].click();
+     }
+     });
+  
+   </script>
     
   </body>
 </html>

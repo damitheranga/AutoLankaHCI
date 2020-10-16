@@ -168,9 +168,19 @@
 					  <option>CTV</option>
 					</select>
 					<select data-trigger="" name="choices-single-defaul">
-						<option placeholder="" value="">Year</option>
-						<option>Subject b</option>
-						<option>Subject c</option>
+						<option placeholder="" value=""> Registered Year</option>
+						<option>2001</option>
+						<option>2002</option>
+						<option>2003</option>
+						<option>2004</option>
+						<option>2005</option>
+						<option>2006</option>
+						<option>2007</option>
+						<option>2008</option>
+						<option>2009</option>
+						<option>2010</option>
+						<option>2011</option>
+						<option>2012</option>
 					  </select>
 					  <label for="year">Release Year</label>
 					  <!-- <input type="text" placeholder="dulita" id="year" style="width: 50px; padding: 10px 185px 24px 70px;;"> -->
@@ -197,8 +207,19 @@
 						<option>6</option>
 						<option>other</option>
 					</select>
-					<label for="Mileage">Mileage</label>
-					<input type="text" id="Mileage" name="Mileage" placeholder="From" style="margin-top: -20px; ">
+					<!-- <label for="Mileage">Mileage</label> -->
+					<form action="/action_page.php">
+						<div class="row col-12">
+							<label class="w-100 mb-3" for="Mileage" style="margin-top: -16px;">Mileage(Km)</label>
+						
+						<div class="col-6">
+							<input type="text" id="Mileage" name="Mileage" placeholder="From" style="margin-top: -30px; padding: 0px 1px 19px 0px; height: 35px; font-family: monospace;" >
+						</div>
+						<div class="col-6">
+							<input type="text" id="Mileage" name="Mileage" placeholder="To" style="margin-top: -30px; padding: 0px 1px 19px 0px;  font-family: monospace;" >
+						</div>
+						</div>
+					</form>
 
 				  </div>
 				</div>
