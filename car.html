@@ -135,8 +135,7 @@
 					  <option>Suv</option>
 					  <option>Bike</option>
 					  <option>Bues</option>
-					  <option>Suv</option>
-					  <option>Suv</option>
+					  
 					</select>
 				  </div>
 				</div>
@@ -145,14 +144,14 @@
 					<select data-trigger="" name="choices-single-defaul">
 					  <option placeholder="" value="">Fule Type</option>
 					  <option>Petrol</option>
-					  <option>Disle</option>
+					  <option>Diesel</option>
 					</select>
 				  </div>
 				</div>
 				<div class="input-field">
 				  <div class="input-select">
 					<select data-trigger="" name="choices-single-defaul">
-					  <option placeholder="" value="">Size</option>
+					  <option placeholder="" value="">Body Type</option>
 					  <option>Subject b</option>
 					  <option>Subject c</option>
 					</select>
@@ -163,38 +162,72 @@
 				<div class="input-field">
 				  <div class="input-select">
 					<select data-trigger="" name="choices-single-defaul">
-					  <option placeholder="" value="">Sale</option>
-					  <option>Subject b</option>
-					  <option>Subject c</option>
+					  <option placeholder="" value="">Transmission</option>
+					  <option>Manual</option>
+					  <option>Automatic</option>
+					  <option>CTV</option>
 					</select>
+					<select data-trigger="" name="choices-single-defaul">
+						<option placeholder="" value="">Year</option>
+						<option>Subject b</option>
+						<option>Subject c</option>
+					  </select>
+					  <label for="year">Release Year</label>
+					  <!-- <input type="text" placeholder="dulita" id="year" style="width: 50px; padding: 10px 185px 24px 70px;;"> -->
+					  <form action="/action_page.php">
+						<input type="date" id="year" name="year" style="margin-top: -20px; padding: 0px 1px 19px 0px;" >
+						
+					  </form>
+
 				  </div>
 				</div>
 				<div class="input-field">
 				  <div class="input-select">
 					<select data-trigger="" name="choices-single-defaul">
-					  <option placeholder="" value="">Time</option>
-					  <option>Last time</option>
-					  <option>Today</option>
-					  <option>This week</option>
-					  <option>This month</option>
-					  <option>This year</option>
+					  <option placeholder="" value="">Condition</option>
+					  <option>New</option>
+					  <option>Used</option>
+					  <option>Recondition</option>
+	
 					</select>
+					<select data-trigger="" name="choices-single-defaul">
+						<option placeholder="" value="">Door Count</option>
+						<option>2</option>
+						<option>4</option>
+						<option>6</option>
+						<option>other</option>
+					</select>
+					<label for="Mileage">Mileage</label>
+					<input type="text" id="Mileage" name="Mileage" placeholder="From" style="margin-top: -20px; ">
+
 				  </div>
 				</div>
 				<div class="input-field">
 				  <div class="input-select">
 					<select data-trigger="" name="choices-single-defaul">
-					  <option placeholder="" value="">Type</option>
-					  <option>Subject b</option>
-					  <option>Subject c</option>
+					  <option placeholder="" value="">Exterior colour</option>
+					  <option>White </option>
+					  <option>Black</option>
+					  <option>Blue</option>
+					  <option>Gold</option>
+					  <option>Green</option>
+					  <option>Grey</option>
+					  <option>Pink</option>
+					  <option>Orange</option>
+					  <option>Purple</option>
 					</select>
+					<select data-trigger="" name="choices-single-defaul">
+						<option placeholder="" value="">Type</option>
+						<option>Subject b</option>
+						<option>Subject c</option>
+					  </select>
 				  </div>
 				</div>
 			  </div>
 			  <div class="row third">
 				<div class="input-field">
 				  <div class="result-count">
-					<span> </span>results</div>
+					<span> </span></div>
 				  <div class="group-btn">
 					<button class="btn-delete" id="delete">RESET</button>
 					<button class="btn-search">SEARCH</button>
