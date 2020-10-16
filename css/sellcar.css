@@ -17,6 +17,18 @@ h2 {
 h2 b {
 	color: #ffc000;
 }
+
+h4 b{
+	color: #0020C2;
+}
+
+
+
+h3{
+	color: #0275d8;
+
+
+}
 h2::after {
 	content: "";
 	width: 100px;
